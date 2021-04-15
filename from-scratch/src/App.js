@@ -1,12 +1,14 @@
 import React from 'react';
-import GetAboutData from "./getAboutData";
+import { Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   return (
-    <div className="App">
-      <p>This is React speaking.</p>
-      <GetAboutData />
-    </div>
+    <Switch>
+      <Route exact={true} path="/" component={Home} />
+      <Route exact={true} path="/about-this" component={About} />
+    </Switch>
   );
 }
 

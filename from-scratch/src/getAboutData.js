@@ -10,7 +10,7 @@ const getAboutData = () => {
 
   return (
     <div>
-      <p>Get about ran (see console).</p>
+      <p><em>(GetAboutData ran (see console)).</em></p>
     </div>
   );
 };
